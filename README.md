@@ -1,5 +1,8 @@
 # WeChat-Material-You
 
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
+[![中文](https://img.shields.io/badge/lang-中文-red.svg)](README.zh-CN.md)
+
 为微信网页版打造的Material You风格CSS主题。
 ![WeChatThemeDemo](https://github.com/user-attachments/assets/82c46d03-72d4-45a9-944d-1f1b4dbd5407)
 ![WeChatThemeDemo2](https://github.com/user-attachments/assets/39a5b1c4-5ac6-4d1b-9565-add70e82ad12)
