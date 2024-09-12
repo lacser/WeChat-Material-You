@@ -15,7 +15,7 @@
 
 ## 安装说明
 
-1. 首先,您需要安装Stylish插件。Stylish是一个用户样式管理器,允许您自定义网站的外观。
+1. 首先，您需要安装Stylish插件。Stylish是一个用户样式管理器，允许您自定义网站的外观。
 
    - [Chrome版Stylish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
    - [Firefox版Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) **注意：**此主题尚未在Firefox上测试，如果有任何显示问题，请通过issues反馈。
@@ -48,4 +48,4 @@
 
 ---
 
-如果您喜欢这个主题,请考虑给项目一个star ⭐️
+如果您喜欢这个主题，请考虑给项目一个star ⭐️
