@@ -1,0 +1,522 @@
+.login_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -270px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px; /*增加登录界面圆角*/
+    background-color: #fcfdf6;
+    width: 380px;
+    height: 540px;
+    box-shadow: 0 2px 10px #999;
+    -moz-box-shadow: #999 0 2px 10px;
+    -webkit-box-shadow: #999 0 2px 10px;
+}
+
+.login_box .avatar .img {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; /*增加登陆界面头像圆角*/
+    margin-bottom: 40px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.main_inner { 
+    max-width: 1000px;
+    min-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 20px; /*更改主面板圆角*/
+    overflow: hidden;
+}
+
+.panel {
+    position: relative;
+    width: 280px;
+    height: 100%;
+    float: left;
+    background: #fcfdf6; /*更改左侧联系人面板背景色*/
+}
+
+.dropdown_menu {
+    background-color: #fcfdf6;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; /*更改主页面弹出菜单圆角*/
+    overflow: hidden;
+    border: none; /*删除主页面弹出菜单边框*/
+    box-shadow: 2px 3px 10px rgba(0,0,0,.1);
+    -moz-box-shadow: rgba(0,0,0,.1) 2px 3px 10px;
+    -webkit-box-shadow: rgba(0,0,0,.1) 2px 3px 10px;
+    min-width: 125px;
+}
+
+.dropdown_menu li a {
+    display: block;
+    text-decoration: none;
+    color: #121f0e; /*更改主页面弹出菜单文字颜色*/
+    font-size: 14px;
+    padding: 8px;
+    border-bottom: none; /*删除主页面弹出菜单分隔线*/
+    text-align: left;
+}
+
+.header .info .nickname .display_name {
+    display: inline-block;
+    font-weight: 400;
+    width: 156px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    color: #1a1c18; /*更改左侧联系人面板用户昵称颜色*/
+    font-size: 18px;
+    vertical-align: top;
+    line-height: 31px;
+    text-decoration: none;
+}
+
+.header .avatar .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; /*登入用户照片圆角*/
+    display: block;
+    cursor: pointer;
+}
+
+.search_bar .frm_search {
+    width: 214px;
+    height: 32px;
+    line-height: 32px;
+    border: 0;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #dfe4d8; /*更改搜索框颜色*/
+    color: #43483f; /*更改搜索框内用户输入文字的颜色*/
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+input::placeholder {
+    color: #43483f !important; /*更改搜索框占位符颜色*/
+}
+
+.tab .tab_item:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 0;
+    height: 20px;
+    border-right: none; /*去除了面板切换开关之间的分隔线*/
+}
+
+.tab:after {
+    content: "";
+    position: absolute;
+    border-bottom: none; /*去除了面板切换开关下方的分隔线*/
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.download_entry .msg a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #006e04; /*更改下载入口颜色*/
+}
+
+.download_entry {
+    padding: 13px 18px 11px;
+    border-bottom: none; /*去除了下载入口下方的分隔线*/
+}
+
+.chat_item.top {
+    background-color: #d7e8cd; /*更改置顶联系人背景颜色*/
+}
+
+.chat_item.active {
+    background: #bcebee; /*更改被选中联系人背景颜色*/
+}
+
+.chat_item .info .nickname {
+    font-weight: 400;
+    font-size: 13px;
+    color: #121f0e; /*更改联系人昵称颜色*/
+    line-height: 20px;
+}
+
+.chat_item {
+    overflow: hidden;
+    padding: 12px 15px 11px; /*更改了联系人照片的边距*/
+    margin: 8px; /*增加了联系人之间的边距*/
+    border-bottom: none; /*去除了联系人下方的分隔线*/
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px; /*为联系人增加圆角*/
+    background: #dfe4d8;
+}
+
+.chat_item .avatar .img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 5px; /*增加联系人照片圆角*/
+}
+
+.chat_item.active .ext, .chat_item.active .info .msg {
+    color: #54634e; /*更改收到信息的颜色*/
+}
+
+.read_list .just_for_bg {
+    background-color: #fcfdf6; /*更改公众号列表分隔符颜色*/
+    padding-top: 10px;
+}
+
+.read_item_hd {
+    overflow: hidden;
+    padding: 10px 11px; /*减小公众号博主昵称间距*/
+    background-color: #d7e8cd; /*更改公众号名称背景颜色*/
+    border-radius: 10px; /*添加公众号博主昵称圆角*/
+    margin: 8px; /*增加公众号博主昵称外间距*/
+}
+
+.read_item_hd .info .username {
+    font-size: 12px;
+    color: #002200; /*更改公众号博主昵称颜色*/
+    line-height: 1;
+}
+
+.read_item {
+    padding: 10px 18px 9px;
+    border-bottom: none; /*去除公众号文章分隔线 */
+    border-radius: 10px; /*增加公众号文章圆角*/
+    margin: 8px; /*增加公众号文章间距*/
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #dfe4d8; /*更改公众号文章背景颜色*/
+}
+
+.read_item.active {
+    background-color: #bcebee; /*更改公众号文章活跃文章背景颜色*/
+}
+
+.read_item .title {
+    font-weight: 400;
+    font-size: 13px;
+    color: #121f0e; /*更改公众号文章标题颜色*/
+    max-height: 40px;
+}
+
+.contact_list .contact_title {
+    padding: 1px 11px; /*更改联系人首字母内间距*/
+    font-weight: 400;
+    color: #121f0e; /*更改联系人界面首字母颜色*/
+    background: #d7e8cd; /*更改联系人界面首字母背景色*/
+    font-size: 14px;
+    border-radius: 11px; /*增加联系人首字母圆角*/
+    margin: 0px 8px; /*增加联系人首字母间距*/
+}
+
+.contact_list .contact_item {
+    overflow: hidden;
+    padding: 10px 11px 9px; /*更改联系人内间距*/
+    border-bottom: none; /*去除联系人界面分隔线*/
+    cursor: pointer;
+    background: #dfe4d8; /*更改联系人界面联系人背景色*/
+    border-radius: 10px; /*增加联系人圆角*/
+    margin: 8px; /*增加联系人间距*/
+}
+
+.contact_list .info .nickname {
+    color: #1a1c18; /*更改联系人昵称颜色*/
+    font-weight: 400;
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.contact_list .active {
+    background: #fcfdf6; /*更改联系人选中时背景色*/
+}
+
+.contact_list .avatar .img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 5px; /*更改联系人照片圆角*/
+}
+
+.profile .avatar .img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; /*更改联系人详细信息照片圆角*/
+}
+
+.box {
+    position: relative;
+    background-color: #fcfdf6; /*更改聊天窗背景颜色*/
+    height: 100%;
+    overflow: hidden;
+}
+
+.box_hd .title_wrap {
+    position: relative;
+    padding: 10px 0;
+    margin: 0 19px;
+    border-bottom: none; /*去除聊天窗名称分隔线*/
+    background-color: #fcfdf6; /*更改聊天窗顶部颜色*/
+    z-index: 1024;
+}
+
+.members {
+    padding: 40px 4px 8px 17px;
+    background-color: #bcebee; /*更改聊天成员面板背景色*/
+    border-bottom: none; /*去除聊天成员面板分隔线*/
+    margin: 20px; /*更改聊天成员面板边距*/
+    border-radius: 15px; /*增加聊天成员面板圆角*/
+}
+
+.member .avatar {
+    display: block;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    background-color: #ccc;
+    border-radius: 8px; /*添加增加聊天成员面板头像圆角*/
+}
+
+.member .nickname {
+    color: #002022; /*更改聊天成员面板用户名颜色*/
+    width: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-size: 12px;
+    margin-left: -8px;
+    vertical-align: middle;
+}
+
+.bubble {
+    max-width: 500px;
+    min-height: 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; /*增加聊天气泡圆角*/
+    margin: 0 10px;
+}
+
+.message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; /*增加聊天头像圆角*/
+    float: left;
+    cursor: pointer;
+}
+
+.bubble.bubble_primary {
+    background-color: #78ff66; /*更改聊天气泡颜色*/
+}
+
+.bubble.bubble_primary.right.arrow_primary:before, .bubble.bubble_primary.right:after {
+    border-left-color: #78ff66; /*更改聊天气泡箭头颜色*/
+    border-left-width: 4px;
+}
+
+.bubble.bubble_default {
+    background-color: #bcebee; /*更改聊天对象气泡颜色*/
+}
+
+.bubble_cont .attach {
+    padding: 10px;
+    background-color: #bcebee; /*更改聊天对象文件颜色*/
+    min-height: 75px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 2px;
+    position: relative;
+}
+
+.bubble_cont .attach_bd .cont .opr a {
+    color: #002022; /*更改下载按钮颜色*/
+    text-decoration: none;
+}
+
+.chat .box_ft {
+    height: 160px; /*减小聊天框高度*/
+    margin: 0px 19px 19px; /*添加聊天框边距*/
+    border-top: none; /*去除聊天框顶部分隔线*/
+    background: #d7e8cd; /*更改聊天框背景色*/
+    border-radius: 20px; /*添加聊天框圆角*/
+}
+
+.chat .box_ft .toolbar {
+    height: 30px;
+    padding: 10px 9px; /*更改聊天框内工具按钮位置*/
+}
+
+.chat .box_ft .content .flex {
+    height: 4em; /*更改输入框高度*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 20px;
+    outline: none;
+    border: 0;
+    font-size: 16px; /*增大输入框字体*/
+}
+
+.chat .box_ft .action {
+    text-align: right;
+    margin: 0px 11px; /*更改发送按钮位置*/
+}
+
+.btn_send {
+    background-color: #fcfdf6;
+    color: #222;
+    padding: 5px 10px;
+    border-radius: 10px; /*更改发送按钮样式*/
+}
+
+.expression {
+    border: none; /*去除表情选择器边框*/
+}
+
+.exp_hd {
+    padding: 8px 20px 0;
+    overflow: hidden;
+    background-color: #d7e8cd; /*更改表情选择器头颜色*/
+    border-radius: 15px; /*添加表情选择器头圆角*/
+    margin-bottom: 10px; /*添加表情选择器边距*/
+}
+
+.exp_bd {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    background: #dfe4d8; /*更改表情选择器背景颜色*/
+    border-radius: 15px; /*添加表情选择器圆角*/
+}
+
+.qq_face a {
+    float: left;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    text-indent: -999em;
+    border-bottom: none;
+    border-right: none; /*删除表情间分隔线*/
+    padding-bottom: 1px;
+    padding-right: 1px; /*添加表情间距*/
+    cursor: pointer;
+    background: url(//res.wx.qq.com/t/wx_fed/webwx/res/static/img/15BPafa.png) no-repeat;
+}
+
+.emoji_face a {
+    float: left;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    text-indent: -999em;
+    border-bottom: none;
+    border-right: none; /*删除表情间分隔线*/
+    padding-bottom: 1px;
+    padding-right: 1px; /*添加表情间距*/
+    cursor: pointer;
+    background: url(//res.wx.qq.com/t/wx_fed/webwx/res/static/img/6AfH8-r.png) no-repeat;
+}
+
+.web_wechat_tab_chat {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -150px -96px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_chat_hl {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -185px -96px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_public {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -376px -322px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_public_hl {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -304px -281px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_friends {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -220px -96px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_friends_hl {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -304px -246px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+} /*更换左侧切换开关图标资源*/
+
+.mmpop {
+    position: absolute;
+    background-color: #fcfdf6; /*更改个人名片背景颜色*/
+    z-index: 99;
+    top: 0;
+    left: 0;
+    outline: none;
+    border-radius: 20px; /*添加个人名片圆角*/
+}
+
+body {
+    font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatBackground) no-repeat 50%;
+    background-size: cover;
+}
+
+.web_wechat_search {
+    background: url(https://res.cloudinary.com/dwaf08bee/image/upload/f_auto,q_auto/v1/SylistSources/WeChatIcons2) no-repeat;
+    background-position: -60px -432px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
