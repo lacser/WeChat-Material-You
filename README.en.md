@@ -21,7 +21,6 @@ This theme applies Google’s Material You design style to bring a more modern U
 1. First, you need to install the Stylish extension. Stylish is a user style manager that allows you to customize the appearance of websites.
 
    - [Stylish for Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
-   - [Stylish for Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/) **Note:** This theme has not been tested on Firefox. If you encounter any display issues, please report them via issues.
 
 2. After installing Stylish, open [WeChat Web](https://wx.qq.com/), enable the extension, and paste the code from the project's `main.css` file (as shown in the image below).
 
